@@ -65,3 +65,13 @@ By running tests in advance and by engaging with peer review for prospective cha
 
 Changes resulting in test failures will be reverted if they cannot be resolved within one business day.
 
+## Releases / branch flow
+
+All development is done on the `master` branch. When we decide to do a release, a release branch is created, the release stabilised on it (work on `master` may continue without interference), when the release is ready, the branch is tagged, merged back to `master` and deleted.
+
+This means that the only long-lived branch is `master`.
+
+### Bug fixes
+
+Should a bug fix be needed for a particular release, a bug fix branch is created from the appropriate release tag, fixes applied, the branch is tagged (before releasing the bug fixes) and merged to master, after which it is deleted.
+
